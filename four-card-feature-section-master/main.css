@@ -53,6 +53,10 @@ img {
   float: right;
 }
 
+.img {
+  height: 50px;
+}
+
 .supervisor{
   border-top: 4px solid hsl(180, 62%, 55%);
 }
@@ -84,5 +88,20 @@ img {
 */
 
 @media only screen and (min-width: 600px){
+  .header {
+    width: 40%;
+  }
 
+  .cards-container {
+    display: flex;
+  }
+
+  .col1, .col3 {
+    width: 100%;
+    align-self: center;
+  }
+
+  .col2 {
+    width: 100%;
+  }
 }
