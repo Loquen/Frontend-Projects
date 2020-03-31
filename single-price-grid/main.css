@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,700;1,400&display=swap');
+
+body{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  font-family: 'Karla', sans-serif;
+}
+
+main {
+  box-shadow: 5px 5px 8px 10px #999;
+  width: 65%;
+  border-radius: 5px;
+}
+
+.top {
+  margin: 50px;
+}
+
+.top h2 {
+  color:hsl(179, 62%, 43%);
+  font-weight: 700;
+}
+
+.top h3 {
+  color: hsl(71, 73%, 54%);
+  font-weight: 400;
+}
+
+.top p {
+  font-weight: 200;
+}
+
+.bottom { 
+  display: flex;
+  justify-content: center;
+  color: white;
+}
+
+.left, .right {
+  padding: 50px;
+  width: 50%;
+}
+
+.left {
+  background-color: rgb(43, 179, 177);
+  border-radius: 0 0 0 5px;
+}
+
+.right {
+  background-color: rgb(74, 190, 189);
+  border-radius: 0 0 5px 0;
+}
+
+.prices {
+  display: flex;
+  align-items: center;
+}
+
+#price {
+  font-weight: 700;
+  font-size: xx-large;
+}
+
+#month {
+  opacity: 50%;
+}
+
+button {
+  background-color: hsl(71, 73%, 54%);
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  width: 100%;
+  border-radius: 5px;
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: lightblue;
+  }
+}
