@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+body{
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* font-size: 15px; */
+  font-family: 'Poppins', sans-serif;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; 
+  width: 85%;
+}
+
+.header {
+  text-align: center;
+  margin: 20px 0 30px 0;
+}
+
+.title-1, .title-2 {
+  font-size: 30px;
+}
+.title-1{
+  font-weight: 200;  
+}
+
+.title-2 {
+  font-weight: 600;  
+}
+
+.card {
+  box-shadow: 5px 5px 8px #999;
+  padding: 30px;
+  margin: 20px;
+}
+
+.card-title {
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.content {
+  margin-bottom: 10px;
+}
+
+img {
+  float: right;
+}
+
+.supervisor{
+  border-top: 4px solid hsl(180, 62%, 55%);
+}
+
+.team {
+  border-top: 4px solid hsl(0, 78%, 62%);
+}
+
+.karma {
+  border-top: 4px solid hsl(34, 97%, 64%);
+}
+
+.calc {
+  border-top: 4px solid hsl(212, 86%, 64%);
+}
+/*
+### Primary
+ Red: hsl(0, 78%, 62%)
+- Cyan: hsl(180, 62%, 55%)
+- Orange: hsl(34, 97%, 64%)
+- Blue: hsl(212, 86%, 64%)
+
+
+### Neutral
+
+- Very Dark Blue: hsl(234, 12%, 34%)
+- Grayish Blue: hsl(229, 6%, 66%)
+- Very Light Gray: hsl(0, 0%, 98%)
+*/
+
+@media only screen and (min-width: 600px){
+
+}
