@@ -33,9 +33,9 @@
       Hello fellow shoppers! We're currently building our new fashion store. 
       Add your email below to stay up-to-date with announcements and our launch deals.
     </p>
-    <form action="">
-      <input type="text" placeholder="Email Address">
-      <input type="button" value=">">
+    <form name='email'>
+      <input name='address' type="text" placeholder="Email Address">
+      <input type="button" value=">"  onclick="validateForm()">
     </form>
   </div>
   <footer>
@@ -45,7 +45,13 @@
     </p>
   </footer>
   <script>
-    
+    function validateForm(){
+      let x = document.forms["email"]["address"].value;
+      if (x == "") {
+        alert("Name must be filled out");
+        return false;
+      }
+    }
   </script>
 </body>
 </html>
