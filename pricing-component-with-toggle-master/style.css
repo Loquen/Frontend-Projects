@@ -108,6 +108,7 @@ input:checked + .slider:before {
 hr {
   opacity: 50%;
   color:rgb(236, 236, 236);
+  margin: 20px;
 }
 
 button {
@@ -144,6 +145,24 @@ button:hover {
 
 .focus button:hover {
   background-color: lightgrey;
+}
+
+@media only screen and (min-width: 600px) {
+  .card-container {
+    display: flex;
+    width: 75%;
+    margin: auto;
+    align-items:center;
+  }
+
+  .card {
+    height: 100%;
+  }
+  
+  .focus {
+    padding: 40px 20px;
+    height: 450px;
+  }
 }
 /* 
 ## Colors
