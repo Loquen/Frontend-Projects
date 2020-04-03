@@ -1,6 +1,131 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 
-/* font-family: 'Poppins', sans-serif; */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-image: url('./images/bg-intro-mobile.png');
+  background-color: hsl(0, 100%, 74%);
+}
+
+.heading {
+  margin-top: 100px;
+  color: white;
+  text-align: center;
+  width: 80%;
+  margin: 100px auto;
+}
+
+
+.title {
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.form-container {
+  width: 80%;
+  margin: auto;
+}
+
+.trial {
+  color: white;
+  background-color: hsl(248, 32%, 49%);
+  border-radius: 10px;
+  text-align: center;
+  padding: 20px 50px;
+  box-shadow: 0 6px rgba(10, 10, 10, 25%);
+  margin-bottom: 20px;
+}
+
+.form {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 8px rgba(10, 10, 10, 25%);
+}
+
+input {
+  box-sizing: border-box;
+  width: 100%;
+  margin: 5px 0;
+  padding: 15px;
+  font-weight: 600;
+  border-style: none;
+  border-radius: 6px;
+}
+
+input[type=text], input[type=email], input[type=password] {
+  border: 1px solid lightgrey;
+}
+
+input[type=button] {
+  text-transform: uppercase;
+  color: white;
+  background-color: hsl(154, 59%, 51%);
+}
+
+.fine-print {
+  font-size: 10px;
+  padding: 10px 20px;
+  color: grey;
+}
+
+.fine-print a {
+  color: hsl(0, 100%, 74%);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.success, .failure {
+  color: white;
+  padding: 15px;
+  border-radius: 10px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.success {
+  background-color: hsl(154, 59%, 51%);
+}
+
+.failure {
+  background-color: hsl(0, 100%, 65%);
+}
+
+@media only screen and (min-width: 600px) {
+  body {
+    background-image: url('./images/bg-intro-desktop.png');
+  }
+
+  .main {
+    height: 95vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .heading, .form-container{
+    width: 50%;
+  }
+  
+  .heading {
+    padding: 0 70px 0 170px;
+    text-align: left;
+  }
+
+  .title {
+    font-size: 40px;
+  }
+
+  .form-container {
+    padding: 0 150px 0 0;
+  }
+
+  .form {
+    padding: 30px;
+  }
+}
 /*
 
 Colors 
