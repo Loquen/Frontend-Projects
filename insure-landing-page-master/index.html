@@ -8,78 +8,186 @@
   
   <title>Frontend Mentor | Insure landing page</title>
 
+  <script src="https://kit.fontawesome.com/cdff8e23e5.js" crossorigin="anonymous"></script>
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <div class="nav">
+    <div class="logo">
+      <img src="./images/logo.svg" alt="Insure Logo">
+    </div>
+    <div class="nav-item-list">
+      <div class="nav-item">How we work</div>
+      <div class="nav-item">Blog</div>
+      <div class="nav-item">Account</div>
+      <div class="nav-item">View plans</div>    
+    </div>
+  </div>
+  <main>
 
-  How we work
-  Blog
-  Account
-  View plans
+    <div class="heading">
+      <div class="heading-image">
+        <picture class="img">
+          <source media="(min-width: 600px)" srcset="./images/image-intro-desktop.jpg">
+          <img src="./images/image-intro-mobile.jpg" alt="Family walking">
+        </picture>
+      </div>
+      <div class="heading-content">
+        <div class="heading-title title">
+          Humanizing your insurance.
+        </div>
+        <div class="heading-body">
+          Get your life insurance coverage easier and faster. We blend our expertise 
+          and technology to help you find the plan that’s right for you. Ensure you 
+          and your loved ones are protected.
+        </div>
+        <button class="view-button">
+          View plans
+        </button>
+      </div>
+    </div>
+    <div class="different">
+      <div class="hr">
+        <hr>
+      </div>
+      <div class="different-title title">
+        We’re different
+      </div>
+      <div class="card-list">
+        <div class="card">
+          <div class="card-icon">
+            <img src="./images/icon-snappy-process.svg" alt="Dollar sign">
+          </div>
+          <div class="action title">
+            Snappy Process
+          </div>
+          <div class="content">
+            Our application process can be completed in minutes, not hours. Don’t get 
+            stuck filling in tedious forms.    
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-icon">
+            <img src="./images/icon-affordable-prices.svg" alt="Dollar sign">
+          </div>
+          <div class="action title">
+            Affordable Prices
+          </div>
+          <div class="content">
+            We don’t want you worrying about high monthly costs. Our prices may be low, 
+            but we still offer the best coverage possible.    
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-icon">
+            <img src="./images/icon-people-first.svg" alt="Dollar sign">
+          </div>
+          <div class="action title">
+            People First
+          </div>
+          <div class="content">
+            Our plans aren’t full of conditions and clauses to prevent payouts. We make 
+            sure you’re covered when you need it.    
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="call-to-action">
+      <div class="call title">
+        Find out more about how we work
+      </div>
+      <button class="view-button">
+        How we work
+      </button>
+    </div>
+    <div class="footer">
+      <div class="footer-heading">
+        <img src="./images/logo.svg" alt="Family walking">
+        <div class="footer-social">
+          <i class="fab fa-facebook fa-2x"></i>
+          <i class="fab fa-twitter fa-2x"></i>
+          <i class="fab fa-pinterest fa-2x"></i>
+          <i class="fab fa-instagram fa-2x"></i>
+        </div>
+      </div>
+      <hr>
+      <div class="footer-card-list">
 
-  Humanizing your insurance.
-
-  Get your life insurance coverage easier and faster. We blend our expertise 
-  and technology to help you find the plan that’s right for you. Ensure you 
-  and your loved ones are protected.
-
-  View plans
-
-  We’re different
-
-  Snappy Process
-
-  Our application process can be completed in minutes, not hours. Don’t get 
-  stuck filling in tedious forms.
-
-  Affordable Prices
-
-  We don’t want you worrying about high monthly costs. Our prices may be low, 
-  but we still offer the best coverage possible.
-
-  People First
-
-  Our plans aren’t full of conditions and clauses to prevent payouts. We make 
-  sure you’re covered when you need it.
-
-  Find out more about how we work
-
-  How we work
-
-  Our company
-
-  How we work
-  Why Insure?
-  View plans
-  Reviews
-
-  Help me
-
-  FAQ
-  Terms of use
-  Privacy policy
-  Cookies
-
-  Contact
-
-  Sales
-  Support
-  Live chat
-
-  Others
-
-  Careers
-  Press
-  Licenses
-
-  
+        <div class="footer-card">
+          <div class="footer-title">
+            Our company
+          </div> 
+          <div class='footer-item'>
+            How we work
+          </div>
+          <div class='footer-item'>
+            Why Insure?
+          </div>
+          <div class='footer-item'>
+            View plans
+          </div>
+        <div class='footer-item'>
+          Reviews
+        </div>
+      </div>
+      <div class="footer-card">
+        <div class="footer-title">
+          Help me
+        </div> 
+        <div class='footer-item'>
+          FAQ
+        </div>
+        <div class='footer-item'>
+          Terms of use
+        </div>
+        <div class='footer-item'>
+          Privacy policy
+        </div>
+        <div class='footer-item'>
+          Cookies
+        </div>
+      </div>
+      <div class="footer-card">
+        <div class="footer-title">
+          Contact
+        </div> 
+        <div class='footer-item'>
+          Sales
+        </div>
+        <div class='footer-item'>
+          Support
+        </div>
+        <div class='footer-item'>
+          Live chat
+        </div>
+      </div>
+      <div class="footer-card">
+        <div class="footer-title">
+          Others
+        </div> 
+        <div class='footer-item'>
+          Careers
+        </div>
+        <div class='footer-item'>
+          Press
+        </div>
+        <div class='footer-item'>
+          Licenses
+        </div>
+      </div> 
+    </div>
+    </div>
+  </main>
+    
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="https://www.loquenjones.com/">Loquen Jones</a>.
   </div>
+  <script src="main.js"></script>
 </body>
 </html>
