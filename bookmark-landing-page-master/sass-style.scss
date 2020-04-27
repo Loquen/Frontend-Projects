@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap');
+
+$rubrik: 'Rubik', sans-serif;
+
+$soft-blue: hsl(231, 69%, 60%);
+$soft-red: hsl(0, 94%, 66%);
+$gray: hsl(229, 8%, 60%);
+$dark: hsl(229, 31%, 21%);
+
+
+body {
+  font-family: $rubrik;
+  margin: 0;  
+  text-align: center;
+}
+
+button {
+  border-style: none;
+  color: white;
+  background-color: $soft-blue;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 15px;
+  padding: 15px 25px;
+}
+
+.title {
+  font-weight: 500;
+  font-size: 25px;
+}
+
+.text {
+  color: $gray;
+}
+
+.inactive {
+  display: none;
+}
+
+.subscribe {
+  background-color: $soft-blue;
+  color: white;
+
+  button {
+    background-color: $soft-red;
+  }
+}
+
+footer {
+  color: white;
+  background-color: $dark;
+  
+  .logo-img {
+    filter: invert(100%) sepia(11%) saturate(181%) hue-rotate(238deg) brightness(123%) contrast(98%);
+  }
+}

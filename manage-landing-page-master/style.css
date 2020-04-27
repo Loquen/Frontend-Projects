@@ -84,7 +84,7 @@ button.btn:hover {
 .different .card .title {
   position: relative;
   left: -20px;
-  padding: 12px 30px;
+  padding: 12px 24px;
   z-index: -1;
   background-color: hsl(13, 100%, 96%);
 }
@@ -128,9 +128,9 @@ button.btn:hover {
 
 .picker {
   display: flex;
-  width: 25%;
+  width: 38%;
   margin: auto;
-  height: 20px;
+  height: 30px;
 }
 .picker .circle {
   border: 2px solid hsl(12, 88%, 59%);
