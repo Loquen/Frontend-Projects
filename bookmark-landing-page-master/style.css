@@ -13,14 +13,41 @@ button {
   font-weight: bold;
   font-size: 15px;
   padding: 15px 25px;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.5);
 }
 
-.title {
+button:hover {
+  background-color: #2842d7;
+}
+
+.img {
+  margin: 20px;
+}
+.img img {
+  width: 100%;
+}
+
+.heading .btns {
+  padding: 20px 0;
+}
+.heading .firefox {
+  color: #414141;
+  background-color: #e6e6e6;
+}
+.heading .firefox:hover {
+  background-color: #c5c5c5;
+}
+
+.content {
+  margin: 20px;
+}
+.content .title {
   font-weight: 500;
   font-size: 25px;
+  padding: 10px;
 }
-
-.text {
+.content .text {
+  padding: 10px;
   color: #9194a1;
 }
 
@@ -28,17 +55,100 @@ button {
   display: none;
 }
 
+.selector .tiles {
+  border-top: 1px solid lightgrey;
+  border-bottom: 1px solid lightgrey;
+  padding: 15px;
+  margin: 0 20px;
+  color: #5e616e;
+}
+.selector .tiles.selected {
+  border-bottom: 3px solid #fa5757;
+}
+
+.selection {
+  padding: 50px 20px;
+}
+
+.card-list {
+  padding: 40px;
+}
+.card-list .card {
+  border-radius: 10px;
+  box-shadow: 0 5px 5px #b3b3b3;
+  padding: 25px;
+  margin: 30px 15px;
+}
+.card-list .card button {
+  box-shadow: none;
+}
+.card-list .card .title {
+  font-weight: 500;
+  font-size: 18px;
+  padding: 10px;
+}
+.card-list .card .text {
+  color: #9194a1;
+  font-size: 14px;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  border-bottom: 2px dashed #9194a1;
+}
+
 .subscribe {
   background-color: #5368df;
   color: white;
+  padding: 50px 20px;
+}
+.subscribe .sub-title {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 14px;
+  margin: 10px 0;
+}
+.subscribe .title {
+  font-size: 22px;
+  font-weight: 500;
+  padding: 0 10px 30px;
+}
+.subscribe .sub-form {
+  display: flex;
+  flex-direction: column;
+}
+.subscribe .sub-form input, .subscribe .sub-form button {
+  margin: 10px 0;
+}
+.subscribe .sub-form input {
+  font-size: 15px;
+  padding: 18px;
+  border: none;
+  border-radius: 5px;
 }
 .subscribe button {
   background-color: #fa5757;
+}
+.subscribe button:hover {
+  background-color: #f82525;
 }
 
 footer {
   color: white;
   background-color: #252b46;
+  padding-top: 30px;
+}
+footer .footer-links {
+  padding: 10px;
+}
+footer .footer-links .link {
+  padding: 10px;
+}
+footer .social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+footer .social .soc-img {
+  padding: 20px;
 }
 footer .logo-img {
   filter: invert(100%) sepia(11%) saturate(181%) hue-rotate(238deg) brightness(123%) contrast(98%);

@@ -22,33 +22,167 @@ button {
   font-weight: bold;
   font-size: 15px;
   padding: 15px 25px;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, .5);
 }
 
-.title {
-  font-weight: 500;
-  font-size: 25px;
+button:hover {
+  background-color: darken($soft-blue, 10%);
 }
 
-.text {
-  color: $gray;
+.img {
+  margin: 20px;
+  img {
+    width: 100%;
+  }
 }
+
+.heading {
+  .btns {
+    padding: 20px 0;
+  }
+
+  .firefox {
+    color: rgb(65, 65, 65);
+    background-color: rgb(230, 230, 230);
+  }
+
+  .firefox:hover {
+    background-color: rgb(197, 197, 197);
+  }
+}
+
+.content {
+  margin: 20px;
+  
+  .title {
+    font-weight: 500;
+    font-size: 25px;
+    padding: 10px;
+  }
+  
+  .text {
+    padding: 10px;
+    color: $gray;
+  }
+}
+  
 
 .inactive {
   display: none;
 }
 
+.selector {
+  .tiles {
+    border-top: 1px solid lightgrey;
+    border-bottom: 1px solid lightgrey;
+    padding: 15px;
+    margin: 0 20px;
+    color: darken($gray, 20%);
+  }
+
+  .tiles.selected {
+    border-bottom: 3px solid $soft-red;
+  }
+
+  
+}
+.selection {
+  padding: 50px 20px;
+}
+
+.card-list {
+  padding: 40px;
+
+  .card {
+    border-radius: 10px;
+    box-shadow: 0 5px 5px darken(white, 30%);
+    padding: 25px;
+    margin: 30px 15px;
+
+    button {
+      box-shadow: none;
+    }
+
+    .title {
+      font-weight: 500;
+      font-size: 18px;
+      padding: 10px;
+    }
+
+    .text {
+      color: $gray;
+      font-size: 14px;
+      padding-bottom: 20px;
+      margin-bottom: 20px;
+      border-bottom: 2px dashed $gray;
+    }
+  }
+}
+
 .subscribe {
   background-color: $soft-blue;
   color: white;
+  padding: 50px 20px;
+
+  .sub-title {
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 14px;
+    margin: 10px 0;
+  }
+
+  .title {
+    font-size: 22px;
+    font-weight: 500;
+    padding: 0 10px 30px; 
+  }
+
+  .sub-form {
+    display: flex;
+    flex-direction: column;
+
+    input, button {
+      margin: 10px 0;
+    }
+
+    input {
+      font-size: 15px;
+      padding: 18px;
+      border: none;
+      border-radius: 5px;
+    }
+  }
 
   button {
     background-color: $soft-red;
+  }
+
+  button:hover {
+    background-color: darken($soft-red, 10%);
   }
 }
 
 footer {
   color: white;
   background-color: $dark;
+  padding-top: 30px;
+
+  .footer-links {
+    padding: 10px;
+    .link {
+      padding: 10px;
+    }
+  }
+
+  .social {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .soc-img {
+      padding: 20px;
+    }
+  }
   
   .logo-img {
     filter: invert(100%) sepia(11%) saturate(181%) hue-rotate(238deg) brightness(123%) contrast(98%);
