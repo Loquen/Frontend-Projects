@@ -61,13 +61,19 @@ button:hover {
   padding: 15px;
   margin: 0 20px;
   color: #5e616e;
+  cursor: pointer;
 }
 .selector .tiles.selected {
   border-bottom: 3px solid #fa5757;
 }
 
 .selection {
+  display: none;
   padding: 50px 20px;
+}
+
+.selection.selected {
+  display: block;
 }
 
 .card-list {
@@ -93,6 +99,30 @@ button:hover {
   padding-bottom: 20px;
   margin-bottom: 20px;
   border-bottom: 2px dashed #9194a1;
+}
+
+.faq-list {
+  margin: 50px 20px;
+}
+.faq-list .question {
+  border-bottom: 1px solid #9194a1;
+  padding: 20px 10px;
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+}
+.faq-list .hidden {
+  display: none;
+}
+.faq-list .answer {
+  color: #9194a1;
+  padding: 20px;
+  text-align: left;
+}
+
+.info {
+  padding: 20px;
+  margin: 50px 0 100px;
 }
 
 .subscribe {

@@ -78,6 +78,7 @@ button:hover {
     padding: 15px;
     margin: 0 20px;
     color: darken($gray, 20%);
+    cursor: pointer;
   }
 
   .tiles.selected {
@@ -87,7 +88,12 @@ button:hover {
   
 }
 .selection {
+  display: none;
   padding: 50px 20px;
+}
+
+.selection.selected {
+  display: block;
 }
 
 .card-list {
@@ -117,6 +123,32 @@ button:hover {
       border-bottom: 2px dashed $gray;
     }
   }
+}
+
+.faq-list {
+  margin: 50px 20px;
+
+  .question {
+    border-bottom: 1px solid $gray;
+    padding: 20px 10px;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+  }
+  .hidden {
+    display: none;
+  }
+
+  .answer {
+    color: $gray;
+    padding: 20px;
+    text-align: left;
+  }
+}
+
+.info {
+  padding: 20px;
+  margin: 50px 0 100px;
 }
 
 .subscribe {
