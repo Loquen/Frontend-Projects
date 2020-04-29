@@ -36,6 +36,29 @@ button:hover {
   }
 }
 
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  .links {
+    list-style-type: none;
+    margin: 0;
+    padding: 5px;
+
+    a {
+      color: $dark;
+      text-decoration: none;
+    }
+    li {
+      padding: 5px;
+    }
+  }
+}
+
+.hide {
+  display: none;
+}
+
 .heading {
   .btns {
     padding: 20px 0;

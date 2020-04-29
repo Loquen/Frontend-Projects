@@ -1,5 +1,6 @@
 const questionsEl = document.querySelector('.faq-list');
 const selectorEl = document.querySelector('.selector');
+const hamburgerEl = document.getElementById('hamburger');
 
 // Helper function 
 function chooseNextSelection(className){
@@ -8,6 +9,11 @@ function chooseNextSelection(className){
     el.classList.add('selected');
   });
 }
+
+hamburgerEl.addEventListener('click', e => {
+  let links = document.querySelector('.links');
+  links.classList.toggle('hide');
+});
 
 questionsEl.addEventListener('click', e => {
   if(!e.target.className === 'question'){

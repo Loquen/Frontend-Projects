@@ -27,6 +27,28 @@ button:hover {
   width: 100%;
 }
 
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+nav .links {
+  list-style-type: none;
+  margin: 0;
+  padding: 5px;
+}
+nav .links a {
+  color: #252b46;
+  text-decoration: none;
+}
+nav .links li {
+  padding: 5px;
+}
+
+.hide {
+  display: none;
+}
+
 .heading .btns {
   padding: 20px 0;
 }
